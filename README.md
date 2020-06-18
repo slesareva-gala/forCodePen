@@ -16,7 +16,8 @@ Visual display of sizes and current index values array [x, y] on the minimum num
 In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
 
 ### The essence of the idea
-![](RackMultipart20200618-4-ihy515_html_fdd047e233931c3d.png)
+![alt-текст](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "Текст заголовка логотипа 1")
+
 
 
 ## 1. **Strips for displaying index level gauges** - this is the space between the boundaries
