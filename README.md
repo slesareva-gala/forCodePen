@@ -1,22 +1,23 @@
-# levelGaugeXY - Level gauges for x and y indices
+# levelGaugeXY - level gauges for x and y indices
 
 Navigation and visual display of the current and largest values
  of the array indices [x, y]
 
-**The reason for the creation**
+### The reason for the creation
 
 Need to visualize tabular data navigation.
 
-**Development goal**
+### Development goal
 
 Visual display of sizes and current index values array [x, y] on the minimum number of HTML + CSS elements managed by JS
 
-**Application**
+### Application  
 
 In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
 
-**T ![](RackMultipart20200618-4-ihy515_html_fdd047e233931c3d.png)
- he essence of the idea**
+### The essence of the idea
+![](RackMultipart20200618-4-ihy515_html_fdd047e233931c3d.png)
+
 
 ## 1. **Strips for displaying index level gauges** - this is the space between the boundaries
  of a pair of block elements (\&lt;div\&gt; tags):
