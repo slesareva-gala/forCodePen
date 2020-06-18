@@ -3,24 +3,24 @@
 Navigation and visual display of the current and largest values
  of the array indices [x, y]
 
-### The reason for the creation
+## The reason for the creation
 
 Need to visualize tabular data navigation.
 
-### Development goal
+## Development goal
 
 Visual display of sizes and current index values array [x, y] on the minimum number of HTML + CSS elements managed by JS
 
-### Application  
+## Application  
 
 In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
 
-### The essence of the idea
-![alt-текст](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "Текст заголовка логотипа 1")
+## The essence of the idea
+       ![alt-текст](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
 
 
 
-## 1. **Strips for displaying index level gauges** - this is the space between the boundaries
+### 1. **Strips for displaying index level gauges** - this is the space between the boundaries
  of a pair of block elements (\&lt;div\&gt; tags):
 
 **\&lt;div\&gt; \&lt;div\&gt; \&lt;/div\&gt; \&lt;/div\&gt;**
@@ -66,7 +66,7 @@ The **Y** strip for displaying the **y** level gauge is vertical the space betwe
 **box-shadow: inset**....
  |
 
-## 2. **Index Indicators -** A bar chart built on strips **X** and **Y** CSS-style working \&lt;div\&gt;:
+### 2. **Index Indicators -** A bar chart built on strips **X** and **Y** CSS-style working \&lt;div\&gt;:
 **box-shadow.**
 
 Main characteristics of index level gauges:
