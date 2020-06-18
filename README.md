@@ -16,14 +16,13 @@ Visual display of sizes and current index values array [x, y] on the minimum num
 In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
 
 ## The essence of the idea
-       ![alt-текст](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
+![alt-текст](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
 
 
 
-### 1. **Strips for displaying index level gauges** - this is the space between the boundaries
- of a pair of block elements (\&lt;div\&gt; tags):
+### 1. **Strips for displaying index level gauges** - this is the space between the boundaries of a pair of block elements < div >:
 
-**\&lt;div\&gt; \&lt;div\&gt; \&lt;/div\&gt; \&lt;/div\&gt;**
+**< div >< div >< /div >< /div >**
 
 where
 
