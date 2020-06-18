@@ -1,44 +1,36 @@
 # levelGaugeXY - level gauges for x and y indices
 
-Navigation and visual display of the current and largest values
- of the array indices [x, y]
+  Navigation and visual display of the current and largest values of the array indices [x, y]
 
 ## The reason for the creation
 
-Need to visualize tabular data navigation.
+  Need to visualize tabular data navigation.
 
 ## Development goal
 
-Visual display of sizes and current index values array [x, y] on the minimum number of HTML + CSS elements managed by JS
+  Visual display of sizes and current index values array [x, y] on the minimum number of HTML + CSS elements managed by JS
 
 ## Application  
 
-In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
+  In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
 
 ## The essence of the idea
-![alt-текст](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
+![the idea of level gauges](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
 
-
-
-### 1. **Strips for displaying index level gauges** - this is the space between the boundaries of a pair of block elements < div >:
-
-**< div >< div >< /div >< /div >**
+**1. Strips for displaying index level gauges** - this is the space between the boundaries of a pair of block elements \<div\>:  
+   **\<div\>\<div\>\</div\>\</div\>**
 
 where
-
-**base \&lt;div\&gt; (external)**
-
-Responsible for the placement on the page and the style of the strips of the gauges,
-
-CSS style:position: !( static); overflow: hidden;
+**base \<div\>** *(external)*  
+  Responsible for the placement on the page and the style of the strips of the gauges,  
+  `CSS style:` position: !( static); overflow: hidden;
 
 **work \&lt;div\&gt; (internal):**
-
 - with a width equal to or less than the width of the base;
 - with a length equal to or less than the length of the base;
 - coinciding with at least one side with the base;
 
-CSS style:position: absolute;
+_CSS style:_position: absolute;
 
 **The dimensions of the working \&lt;div\&gt; and its positioning in the base \&lt;div\&gt;
  are basis for identification of strips**.
