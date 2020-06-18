@@ -18,7 +18,7 @@ In a design in which content is formed based on formatted data, for example: jso
 **T ![](RackMultipart20200618-4-ihy515_html_fdd047e233931c3d.png)
  he essence of the idea**
 
-##1. **Strips for displaying index level gauges** - this is the space between the boundaries
+## 1. **Strips for displaying index level gauges** - this is the space between the boundaries
  of a pair of block elements (\&lt;div\&gt; tags):
 
 **\&lt;div\&gt; \&lt;div\&gt; \&lt;/div\&gt; \&lt;/div\&gt;**
@@ -64,7 +64,7 @@ The **Y** strip for displaying the **y** level gauge is vertical the space betwe
 **box-shadow: inset**....
  |
 
-##2. **Index Indicators -** A bar chart built on strips **X** and **Y** CSS-style working \&lt;div\&gt;:
+## 2. **Index Indicators -** A bar chart built on strips **X** and **Y** CSS-style working \&lt;div\&gt;:
 **box-shadow.**
 
 Main characteristics of index level gauges:
