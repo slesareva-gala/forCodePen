@@ -80,8 +80,8 @@ Main characteristics of index level gauges:
 | |  **y** - the current value of y, _at_ 0\<=y\>=yMax-1 |
 | |  **w** - the length of the strip X corresponding to xMax |
 | |  **h** - the strip length Y corresponding to yMax |
-| **dependence on the index:** | - **direct** - when the index increases, the level gauge increases proportionally|  
-| |  - **inverse** - when the index increases, the level gauge proportionally reduced |
+| **dependence on the index:** | **direct** - when the index increases, the level gauge increases proportionally|  
+| |  **inverse** - when the index increases, the level gauge proportionally reduced |
   
 ***
 # IMPLEMENTATION: levelGaugeXY
