@@ -197,7 +197,7 @@ The default value is set to \'rgb (200,200,200)\'.
 
 **colorlevel**  
 Color Level Gauges.  
-Values: **\'rgb (...)\'** - drawing a shadow with the specified rgb color.  
+Value: **\'rgb (...)\'** - drawing a shadow with the specified rgb color.  
 The default value is set to \'rgb (100,100,100)\'.
 
 ### 3.2. Service methods on the base.lgxy object
@@ -221,18 +221,18 @@ Stripes and level gauges are hidden, working div offsets are canceled, listening
 It is formed on the base \<div\> when changing the properties x, y, lenX, lenY.  
 Flags: **bubbles** set to **true**, **cancelable** set to **false**.
 
-#### Reading at evevt.detail:  
-**base**  
+Reading at **evevt.detail**:  
+**.base**  
 id of base \<div\>;  
-**work**  
+**.work**  
 id of the working \<div\>  
-**x || .y || .lenX || .lenY ||**  
+**.x || .y || .lenX || .lenY**  
 the name of the modified property is \'x\'or \'y\' or \'lenX\' or \'lenY\'  
-**value**  
+**.value**  
 value for changing a property value  
-    - **old**  
+**.old**  
 property value before change  
-     - **new**  
+**.new**  
 property value after change
 
 ## Performance tested on:  
