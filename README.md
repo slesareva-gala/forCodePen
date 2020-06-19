@@ -142,103 +142,63 @@ The quantity values **y**.
 Value is a positive number.  
 The default value is set to 0.
 
-**x**
-
-Current value **x**.
-
-Value between 0 and lenX
-
+**x**  
+Current value **x**.  
+Value between 0 and lenX  
 The default value is set to 0.
 
-**y**
-
-Current value **y**.
-
-Value between 0 and lenY.
-
+**y**  
+Current value **y**.  
+Value between 0 and lenY.  
 The default value is set to 0.
 
-**stepx**
-
-Step to change **x** -value with mouse wheel.
-
-Value is a positive number.
-
+**stepx**  
+Step to change **x** -value with mouse wheel.  
+Value is a positive number.  
 The default value is set to 1.
 
-**stepy**
-
-Step to change **y** -value with mouse wheel.
-
-Value is a positive number.
-
+**stepy**  
+Step to change **y** -value with mouse wheel.  
+Value is a positive number.  
 The default value is set to 1.
 
-**locationX**
+**locationX**  
+Strip **X** placement.  
+Values: **\'top\'** - at the top, **\'bottom\'** - at the bottom.  
+Optional: offset of the working div in the base div when \'top\' - to the down, \'bottom\' – to the up.  
+The default value is set to \'bottom\'.
 
-Strip **X** placement.
+**locationY**  
+Strip **Y** placement.  
+Values: **\'left\'** - at the left, **\'right\'** - at the right.  
+Optional: offset of the working div in the base div when \'left\' - to the right, \'right\' - to the left.  
+The default value is set to \'right\'.
 
-Values: **&#39;top&#39;** - at the top, **&#39;bottom&#39;** - at the bottom.
+**dependX**  
+The dependence of the level gauge **X** on **x** values.  
+Values:  
+\- **\'inverse\'** is the inverse relationship to index growth: with increase/decrease **x** level gauge **X** decreases/increases;  
+\- **\'directly\'** - consistent with the growth of the index: with increasing/decreasing **x** level gauge **X** increases/decreases.  
+The default value is set to \'inverse\'.
 
-Optional: offset of the working div in the base div when &#39;top&#39; - to the down, &#39;bottom&#39; – to the up.
+**dependY**  
+The dependence of the level gauge **Y** on **y** values.  
+Values:  
+\- **\'inverse\'** is the inverse relationship to index growth: with increase/decrease **y** level gauge **Y** decreases/increases;  
+\- **\'directly\'** - consistent with the growth of the index: with increasing/decreasing **y** level gauge **Y** increases/decreases.  
+The default value is set to \'inverse\'.
 
-The default value is set to &#39;bottom&#39;.
+**colorXY**  
+Strips color.  
+Values:  
+\- **\'none\'** - disable shadows style;  
+\- **\'rgb (...)\'** - drawing a shadow with the specified rgb color;  
+The default value is set to \'rgb (200,200,200)\'.
 
-**locationY**
-
-Strip **Y** placement.
-
-Values: **&#39;left&#39;** - at the left, **&#39;right&#39;** - at the right.
-
-Optional: offset of the working div in the base div when &#39;left&#39; - to the right, &#39;right&#39; - to the left.
-
-The default value is set to &#39;right&#39;.
-
-**dependX**
-
-The dependence of the level gauge **X** on **x** values.
-
-Values:
-
-**&#39;inverse&#39;** is the inverse relationship to index growth: with increase / decrease **x** level gauge **X** decreases / increases;
-
-**&#39;directly&#39;** - consistent with the growth of the index: with increasing / decreasing **x** level gauge **X** increases / decreases.
-
-The default value is set to &#39;inverse&#39;
-
-**dependY**
-
-The dependence of the level gauge **Y** on **y** values.
-
-Values:
-
-**&#39;inverse&#39;** is the inverse relationship to index growth: with increase / decrease **y** level gauge **Y** decreases / increases;
-
-**&#39;directly&#39;** - consistent with the growth of the index: with increasing / decreasing **y** level gauge **Y** increases / decreases.
-
-The default value is set to &#39;inverse&#39;
-
-**colorXY**
-
-Strips color.
-
-Values:
-
-**&#39;none&#39;** - disable shadows style;
-
-**&#39;rgb (...)&#39;** - drawing a shadow with the specified rgb color;
-
-The default value is set to &#39;rgb (200,200,200)&#39;.
-
-**colorlevel**
-
-Color Level Gauges.
-
-Values:
-
-**&#39;rgb (...)&#39;** - drawing a shadow with the specified rgb color
-
-The default value is set to &#39;rgb (100,100,100)&#39;
+**colorlevel**  
+Color Level Gauges.  
+Values: **\'rgb (...)\'** - drawing a shadow with the specified rgb color.  
+The default value is set to \'rgb (100,100,100)\'.
 
   1. **Service methods on the base.lgxy object**
 
