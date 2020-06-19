@@ -19,46 +19,45 @@ this is the space between the boundaries of a pair of block elements \<div\>:
 <div id="base"><div id="work"></div></div>
 ```
 **base**    
-    Responsible for the placement on the page and for the style of the strips of the gauges,
-    _CSS style:_
+    Responsible for the placement on the page and for the style of the strips of the gauges,  
+    _CSS style:_  
 ```css 
 #base { 
-  position: !( static);  
+  position: relative; /* ! static */  
   overflow: hidden;
 }
 ```
-
-**work \&lt;div\&gt; (internal):**
+**work**
 - with a width equal to or less than the width of the base;
 - with a length equal to or less than the length of the base;
 - coinciding with at least one side with the base;
 
-_CSS style:_position: absolute;
+_CSS style:_
+```css 
+#work { 
+  position: absolute;
+}
+```
+**The dimensions of the working \<div\> and its positioning in the base \<div\> are basis for identification of strips**.
 
-**The dimensions of the working \&lt;div\&gt; and its positioning in the base \&lt;div\&gt;
- are basis for identification of strips**.
-
-The **X** strip for displaying the **x** level gauge is horizontal the space between the boundaries of the base \&lt;div\&gt;and working \&lt;div\&gt;:
-
+The **X** strip for displaying the **x** level gauge is horizontal the space between the boundaries of the base \<div\> and working \<div\>:
+|  |  |
+| --- | --- |
 | **location:** | top or bottom |
+| **positioning:** | horizontally equal to the left shift of the working \<div\> |
+| **width:** | equal to the width of the working \<div\> |
+| **height:** | equal to the height of the horizontal space between the boundaries of the base and working \<div\>|
+| **visualization:** | CSS style of the base \<div\>: **box-shadow: inset**.... |
+
+The **Y** strip for displaying the **y** level gauge is vertical the space between the boundaries of the base \<div\> and working \<div\>:
+
+|  |  |
 | --- | --- |
-| **positioning:** | horizontally equal to the left shift of the working \&lt;div\&gt; |
-| **width:** | equal to the width of the working \&lt;div\&gt; |
-| **height:** | equal to the height of the horizontal space between the boundaries of the base and working \&lt;div\&gt; |
-| **visualization**** :** | CSS style of the base \&lt;div\&gt;:
-**box-shadow: inset**....
- |
-
-The **Y** strip for displaying the **y** level gauge is vertical the space between the boundaries of the base \&lt;div\&gt; and working \&lt;div\&gt;:
-
 | **location:** | left or right |
-| --- | --- |
-| **positioning:** | vertically equal to the downward shift of the working \&lt;div\&gt; |
-| **width:** | equal to the width of the vertical space between the boundaries of the base \&lt;div\&gt; and working \&lt;div\&gt; |
-| **height:** | equal to the height of the worker \&lt;div\&gt; |
-| **visualization**** :** | CSS style of the base \&lt;div\&gt;:
-**box-shadow: inset**....
- |
+| **positioning:** | vertically equal to the downward shift of the working \<div\> |
+| **width:** | equal to the width of the vertical space between the boundaries of the base \<div\> and working \<div\> |
+| **height:** | equal to the height of the worker \<div\> |
+| **visualization**** :** | CSS style of the base \<div\>: **box-shadow: inset**.... |
 
 ### 2. **Index Indicators -** A bar chart built on strips **X** and **Y** CSS-style working \&lt;div\&gt;:
 **box-shadow.**
