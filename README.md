@@ -15,11 +15,18 @@ In a design in which content is formed based on formatted data, for example: jso
 
 ## 1. Strips for displaying index level gauges  
 this is the space between the boundaries of a pair of block elements \<div\>:  
-   `<div><div></div></div>`  
-  where  
-    **base \<div\>** *(external)*    
-    Responsible for the placement on the page and the style of the strips of the gauges,    
-    CSS style: `position: !( static); overflow: hidden;'
+```html 
+<div id="base"><div id="work"></div></div>
+```
+  **base**    
+    Responsible for the placement on the page and for the style of the strips of the gauges,    
+    _CSS style:_  
+```css 
+#base { 
+  position: !( static);  
+  overflow: hidden;
+}
+```
 
 **work \&lt;div\&gt; (internal):**
 - with a width equal to or less than the width of the base;
