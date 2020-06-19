@@ -144,7 +144,7 @@ The default value is set to 0.
 
 **x**  
 Current value **x**.  
-Value between 0 and lenX  
+Value between 0 and lenX.  
 The default value is set to 0.
 
 **y**  
@@ -200,66 +200,42 @@ Color Level Gauges.
 Values: **\'rgb (...)\'** - drawing a shadow with the specified rgb color.  
 The default value is set to \'rgb (100,100,100)\'.
 
-  1. **Service methods on the base.lgxy object**
+### 3.2. Service methods on the base.lgxy object
 
-**visible()**
-
-Display changes in strips and level gauges.
-
+**visible()**  
+Display changes in strips and level gauges.  
 Installed by default.
 
-**hidden()**
-
-Hide (do not show) strip and level gauge changes.
-
+**hidden()**  
+Hide (do not show) strip and level gauge changes.  
 It can be used in case of changing a property group.
 
-**resize()**
+**resize()**  
+Update strips and level gauges according to current base \<div\> sizes and working \<div\>.
 
-Update strips and level gauges according to current base \&lt;div\&gt; sizes and working \&lt;div\&gt;.
+**destroy()**  
+Disable levelGuageXY.  
+Stripes and level gauges are hidden, working div offsets are canceled, listening for events levelGaugeXY (\'resize\', \'wheel\', \'click\') is disabled, deleted the lgxy property the base \<div\>.
 
-**destroy()**
+### 3.3. levelgaugexy event  
+It is formed on the base \<div\> when changing the properties x, y, lenX, lenY.  
+Flags: **bubbles** set to **true**, **cancelable** set to **false**.
 
-Disable levelGuageXY:
-
-Stripes and level gauges are hidden, working div offsets are canceled, listening for events level Gauge XY (&#39;resize&#39;, &#39;wheel&#39;, &#39;click&#39;) is disabled, deleted the lgxy property the base \&lt;div\&gt;.
-
-1. **levelgaugexy event**
-
-It is formed on the base \&lt;div\&gt; when changing the properties x, y, lenX, lenY.
-
-Flags: bubbles set to true, cancelable set to false.
-
-Reading at **evevt.detail** :
-
-**base**
-
-id of base \&lt;div\&gt;
-
-**work**
-
-id of the working \&lt;div\&gt;
-
-**x || .y || .lenX || .lenY ||**
-
-the name of the modified property is &#39;x&#39; or &#39;y&#39; or &#39;lenX&#39; or &#39;lenY&#39;
-
-**value**
-
-value for changing a property value
-
-**old**
-
-property value before change
-
-**new**
-
+#### Reading at evevt.detail:  
+**base**  
+id of base \<div\>;  
+**work**  
+id of the working \<div\>  
+**x || .y || .lenX || .lenY ||**  
+the name of the modified property is \'x\'or \'y\' or \'lenX\' or \'lenY\'  
+**value**  
+value for changing a property value  
+    - **old**  
+property value before change  
+     - **new**  
 property value after change
 
-**Performance tested on:**
-
-Google Chrome, Version 83.0.4103.97
-
-Firefox Browser, Version 77.0.1
-
-Microsoft Edge, Version 83.0.478.45
+## Performance tested on:  
+- Google Chrome, Version 83.0.4103.97  
+- Firefox Browser, Version 77.0.1  
+- Microsoft Edge, Version 83.0.478.45
