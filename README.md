@@ -97,80 +97,49 @@ Main characteristics of index level gauges:
   - index y - _wheel_,  
   - index x – _Shift-wheel_.
 
-1. **Wiring diagram**** :**
+## 1. Wiring diagram:
+```html 
+   <head>
+    <!-- .... -->
+    <script src="levelGaugeXY.min.js"></script> 
+   </head>
+   <body>
+     <!-- .... -->
+     <div id="base" >     
+        <div id="work" >  
+          <script> 'use strict';                    
+            levelGaugeXY( 'base','work');
+          </script>
+          <!-- .... -->
+        </div>
+     </div>
+     <!-- .... -->
+   </body>
+```
+## 2. Function levelGaugeXY()
+Function **adds** the **lgxy** property to the base div **new object of CLASS LevelGaugeXY**.  
+> **levelGaugeXY**( **idBase**, **idWork** \[ **{ name: value**, ...}** \] )  
+where  
+  **idBase**  
+    id of the base div, e.g. \'base\'  
+  **idWork**  
+    id of the working div, e.g. \'work\'  
+  **{....}**  
+    optional installation parameters that change default property values  
+      **name: value,**  
+      property name and value, e.g. \{ LenY: 5000,\}
 
-\&lt;head\&gt;
+## 3. Methods that modify properties directly on the base.lgxy object
+### 3.1. Return the current value of the property. Can be modified with assignment operator
 
-....
-
-**\&lt;script src = &quot;levelGaugeXY.min.js&quot;\&gt; \&lt;/script\&gt;**
-
-\&lt;/head\&gt;
-
-\&lt;body\&gt;
-
-....
-
-\&lt;div id = &quot;base&quot;\&gt;
-
-\&lt;div id = &quot;work&quot;\&gt;
-
-**\&lt;script\&gt; &#39;use strict&#39;;**
-
-**levelGaugeXY (&#39;base&#39;, &#39;work&#39;);**
-
-**\&lt;/script\&gt;**
-
-....
-
-\&lt;/div\&gt;
-
-\&lt;/div\&gt;
-
-....
-
-\&lt;/body\&gt;
-
-1. The **levelGaugeXY()** function **adds** the **lgxy** property to the base div -
-**object of class LevelGaugeXY**.
-
-**levelGaugeXY (**idBase **,** idWork **[, {**name: value**, ...}]);**
-
-where
-
-**idBase**
-
-id of the base div, e.g. &#39;base&#39;
-
-**idWork**
-
-id of the working div, e.g. &#39;work&#39;
-
-**{....}**
-
-optional installation parameters that change default property values
-
-**name: value,**
-
-property name and value, for example, LenY: 5000,
-
-1. **Methods that modify properties directly on the base.lgxy object**
-  1. **Return the current value of the property. Can be modified with assignment operator.**
-
-**lenX**
-
-The quantity values **x**.
-
-Value is a positive number.
-
+**lenX**  
+The quantity values **x**.  
+Value is a positive number.  
 The default value is set to 0.
 
-**lenY**
-
-The quantity values **y**.
-
-Value is a positive number.
-
+**lenY**  
+The quantity values **y**.  
+Value is a positive number.  
 The default value is set to 0.
 
 **x**
