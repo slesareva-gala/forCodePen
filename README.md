@@ -18,9 +18,9 @@ this is the space between the boundaries of a pair of block elements \<div\>:
 ```html 
 <div id="base"><div id="work"></div></div>
 ```
-  **base**    
-    Responsible for the placement on the page and for the style of the strips of the gauges,    
-    _CSS style:_  
+**base**    
+    Responsible for the placement on the page and for the style of the strips of the gauges,
+    _CSS style:_
 ```css 
 #base { 
   position: !( static);  
