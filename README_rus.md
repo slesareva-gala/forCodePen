@@ -11,7 +11,7 @@
 В дизайне, при котором контент формируется на основе форматированных данных, например: json, двумерный массив и т.д.
   
 **Суть идеи**  
-![the idea of level gauges](https://github.com/slesareva-gala/levelgaugexy/blob/master/levelgaugexy_rus.png "level gauges for x and y indices")
+![the idea of level gauges](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_rus.png "level gauges for x and y indices")
 
 ## 1. Полосы для отображения уровнемеров индексов  
 Это пространство между границами пары блочных элементов (тегов \<div\>):  
