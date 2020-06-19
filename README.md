@@ -84,24 +84,18 @@ Main characteristics of index level gauges:
 | |  - **inverse** - when the index increases, the level gauge proportionally reduced |
   
 ***
-**IMPLEMENTATION:**
+# IMPLEMENTATION: levelGaugeXY
+**Level gauges for x and y indices:** HTML5 + CSS3 + JS (vanilla)
 
-**levelGaugeXY - Level gauges for x and y indices**
-
-HTML5 + CSS3 + JS (vanilla)
-
-**It has the following advantages:**
-
+**It has the following advantages:**  
 - written in vanilla JavaScript, has no dependencies;
 - it has a simple API;
 - includes adjusting the size of the strips and level gauges when scaling;
-- browser windows by pressing Ctrl - mouse wheel;
-- navigation through indexes with a click of the mouse on the stripes;
-- change indices by rotating the mouse wheel over the base div:
-
-index y - mouse wheel,
-
-index x – Shift - mouse wheel
+- browser windows by pressing _Ctrl-wheel_;
+- navigation through indexes with a _click_ of the mouse on the stripes;
+- change indices by rotating the mouse wheel over the base div:  
+  - index y - _wheel_,  
+  - index x – _Shift-wheel_.
 
 1. **Wiring diagram**** :**
 
