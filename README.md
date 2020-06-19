@@ -14,7 +14,7 @@ In a design in which content is formed based on formatted data, for example: jso
 ![the idea of level gauges](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
 
 ## 1. Strips for displaying index level gauges  
-this is the space between the boundaries of a pair of block elements \<div\>:  
+This is the space between the boundaries of a pair of block elements \<div\>:  
 ```html 
 <div id="base"><div id="work"></div></div>
 ```
@@ -47,59 +47,42 @@ The **X** strip for displaying the **x** level gauge is horizontal the space bet
 | **positioning:** | horizontally equal to the left shift of the working \<div\> |
 | **width:** | equal to the width of the working \<div\> |
 | **height:** | equal to the height of the horizontal space between the boundaries of the base and working \<div\>|
-| **visualization:** | CSS style of the base \<div\>: **box-shadow: inset**.... |
+| **visualization:** | CSS style of the base \<div\>: **_box-shadow: inset_**.... |
 
 The **Y** strip for displaying the **y** level gauge is vertical the space between the boundaries of the base \<div\> and working \<div\>:
-
 |  |  |
 | --- | --- |
 | **location:** | left or right |
 | **positioning:** | vertically equal to the downward shift of the working \<div\> |
 | **width:** | equal to the width of the vertical space between the boundaries of the base \<div\> and working \<div\> |
 | **height:** | equal to the height of the worker \<div\> |
-| **visualization**** :** | CSS style of the base \<div\>: **box-shadow: inset**.... |
+| **visualization:** | CSS style of the base \<div\>: **_box-shadow: inset_**.... |
 
-### 2. **Index Indicators -** A bar chart built on strips **X** and **Y** CSS-style working \&lt;div\&gt;:
-**box-shadow.**
+## 2. Index Indicators  
+A bar chart built on strips X and Y CSS-style working \<div\>: **_box-shadow_**.
 
 Main characteristics of index level gauges:
-
-| **location:** | in the respective strips **X** or **Y** |
+|  |  |
 | --- | --- |
+| **location:** | in the respective strips **X** or **Y** |
 | **coordinate origin:** | side of the square of the intersection of strips **X** and **Y** adjacent to the strip |
 | **width:** | equal to the width of the corresponding strip |
-| **length:** | calculation: | for x: **x \* w / x\_max** |
-|
- |
- | for y: **y \* h / y\_max** |
-|
- | exception: | at: x == x\_max == 0: **w** |
-|
- |
- | at: y == y\_max == 0: **h** |
-|
- |
- | where: |
-|
- |
- | **x\_max** - the largest value of **x** , where x\_max\&gt; 0 |
-|
- |
- | **y\_max** - the largest value of **y** , where y\_max\&gt; 0 |
-|
- |
- | **x** - the current value of x, where 0 \&lt;= x \&lt;= x\_max-1 |
-|
- |
- | **y** - the current value of y, where 0 \&lt;= y \&lt;= y\_max-1 |
-|
- |
- | **w** - the length of the strip X corresponding to x\_max |
-|
- |
- | **h** - the strip length Y corresponding to y\_max |
-| **dependence on the index**** :** | direct (when the index increases, the level gauge increases proportionally) |
-| inverse (when the index increases, the level gauge proportionally reduced) |
+| **length:** | **calculation:**  |
+| |  _for x:_   **x\*w/xMax** |
+| |  _for y:_   **y\*h/yMax** |  
+| |  **exception:** |
+| |  _at x==xMax==0:_ **w** |
+| |  _at y==yMax==0:_ **h** |
+| |  where: |
+| |  **xMax** - the largest value of **x** , _at_ xMax \> 0 |
+| |  **yMax** - the largest value of **y** , _at_ yMax \> 0 |
+| |  **x** - the current value of x, _at_ 0\<=x\>=xMax-1 |
+| |  **y** - the current value of y, _at_ 0\<=y\>=yMax-1 |
+| |  **w** - the length of the strip X corresponding to xMax |
+| |  **h** - the strip length Y corresponding to yMax |
+| **dependence on the index:** | - **direct** - when the index increases, the level gauge increases proportionally|  
+| |  - **inverse** - when the index increases, the level gauge proportionally reduced |
+  
 ***
 **IMPLEMENTATION:**
 
