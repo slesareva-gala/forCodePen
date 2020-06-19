@@ -1,26 +1,25 @@
-# levelGaugeXY - level gauges for x and y indices
+# levelGaugeXY _level gauges for x and y indices_
+Navigation and visual display of the current and largest values of the array indices [x, y]
+  
+**The reason for the creation**  
+Need to visualize tabular data navigation.
 
-  Navigation and visual display of the current and largest values of the array indices [x, y]
+**Development goal**  
+Visual display of sizes and current index values array [x, y] on the minimum number of HTML + CSS elements managed by JS
 
-## The reason for the creation
-    Need to visualize tabular data navigation.
-
-## Development goal  
-  Visual display of sizes and current index values array [x, y] on the minimum number of HTML + CSS elements managed by JS
-
-## Application  
-  In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
-
-## The essence of the idea  
+**Application**  
+In a design in which content is formed based on formatted data, for example: json, two-dimensional array, etc.
+  
+**The essence of the idea**  
 ![the idea of level gauges](https://github.com/slesareva-gala/gittest/blob/master/levelgaugexy_ua.png "level gauges for x and y indices")
 
-**1. Strips for displaying index level gauges** - this is the space between the boundaries of a pair of block elements \<div\>:  
-   **\<div\>\<div\>\</div\>\</div\>**
-
-where
-**base \<div\>** *(external)*  
-  Responsible for the placement on the page and the style of the strips of the gauges,  
-  `CSS style:` position: !( static); overflow: hidden;
+## 1. Strips for displaying index level gauges  
+this is the space between the boundaries of a pair of block elements \<div\>:  
+   `<div><div></div></div>`  
+  where  
+    **base \<div\>** *(external)*    
+    Responsible for the placement on the page and the style of the strips of the gauges,    
+    CSS style: `position: !( static); overflow: hidden;'
 
 **work \&lt;div\&gt; (internal):**
 - with a width equal to or less than the width of the base;
@@ -95,7 +94,7 @@ Main characteristics of index level gauges:
  | **h** - the strip length Y corresponding to y\_max |
 | **dependence on the index**** :** | direct (when the index increases, the level gauge increases proportionally) |
 | inverse (when the index increases, the level gauge proportionally reduced) |
-
+***
 **IMPLEMENTATION:**
 
 **levelGaugeXY - Level gauges for x and y indices**
