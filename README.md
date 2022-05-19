@@ -1,6 +1,6 @@
 # _Набор картинок для CodePen_
   
-## Поиграть на codepen:
+## Поиграть на CodePen:
 
 [Прыжки с парашютом](https://codepen.io/slesareva-gala/pen/GROXJpZ?editors=1000)
 
