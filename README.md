@@ -13,4 +13,4 @@
 - [Слайдер-гармошка](https://codepen.io/slesareva-gala/full/yLjEbeV)
 - [Drag & Drop](https://codepen.io/slesareva-gala/full/JjvZgbK) 
 - [Тренажер "Поймай кружок"](https://codepen.io/slesareva-gala/full/MWGqLrK)
-- [Волшебная мышка](https://codepen.io/slesareva-gala/full/MWGqEEK)
+- [Волшебная доска](https://codepen.io/slesareva-gala/full/MWGqEEK)
