@@ -4,7 +4,7 @@
 
 ***Игры от [Glo Academy](https://glo.academy/)***
 
-- [Прыжки с парашютом](https://codepen.io/slesareva-gala/pen/GROXJpZ?editors=1000)
+- [Прыжки с парашютом](https://codepen.io/slesareva-gala/full/GROXJpZ)
 
 - [Игра-головоломка "Три лампочки"](https://codepen.io/slesareva-gala/pen/zYPRKYV?editors=0100)
 
