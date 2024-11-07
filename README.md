@@ -6,6 +6,8 @@
 
 - [Прыжки с парашютом](https://codepen.io/slesareva-gala/full/GROXJpZ)
 
+- [Доставка дроном](https://codepen.io/slesareva-gala/pen/zYgmVmY)
+
 - [Игра-головоломка "Три лампочки"](https://codepen.io/slesareva-gala/full/zYPRKYV)
 
 ***Игры от [Result School](https://result.school/)***
